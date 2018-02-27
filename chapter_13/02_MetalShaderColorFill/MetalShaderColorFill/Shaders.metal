@@ -24,6 +24,6 @@ vertex ColorInOut vertexShader(device float4 *positions [[ buffer(0) ]],
 
 fragment float4 fragmentShader(ColorInOut in [[ stage_in ]])
 {
-    return float4(1,0,0,1);
+    return float4(1,0.5,0,1);
 }
 

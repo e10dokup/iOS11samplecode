@@ -91,13 +91,29 @@ class ViewController: UIViewController, MTKViewDelegate {
         // MTKTextureLoaderを初期化
         let textureLoader = MTKTextureLoader(device: device)
         // テクスチャをロード
-        texture = try! textureLoader.newTexture(
-            name: "highsierra",
-            scaleFactor: view.contentScaleFactor,
-            bundle: nil)
-        
+      guard let uiImage = UIImage(named: "highsierra") else {
+        return
+      }
+      guard let cgImage = uiImage.cgImage else {
+        return
+      }
+      guard let expanded = convert(image: cgImage) else {
+        return
+      }
+      
+      texture = try! textureLoader.newTexture(cgImage: expanded, options: nil)
+      
+      // texture = try! textureLoader.newTexture(with: cgImage, options:)
+//        texture = try! textureLoader.newTexture(
+//            name: "highsierra",
+//            scaleFactor: view.contentScaleFactor,
+//            bundle: nil)
+      
         // ピクセルフォーマットを合わせる
-        mtkView.colorPixelFormat = texture.pixelFormat
+      print(mtkView.colorPixelFormat.rawValue)
+      print(texture.pixelFormat.rawValue)
+      mtkView.colorPixelFormat = .bgra8Unorm
+
     }
     
     // MARK: - MTKViewDelegate

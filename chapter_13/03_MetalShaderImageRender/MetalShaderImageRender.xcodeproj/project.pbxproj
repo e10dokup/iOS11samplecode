@@ -13,6 +13,9 @@
 		8A0CA7701F65283B00E2858E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A0CA76F1F65283B00E2858E /* Assets.xcassets */; };
 		8A0CA7731F65283B00E2858E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0CA7711F65283B00E2858E /* LaunchScreen.storyboard */; };
 		8AAECE121F762CD800C20BF9 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8AAECE111F762CD800C20BF9 /* Shaders.metal */; };
+		E09965202044F45700AD80DB /* functions.metal in Sources */ = {isa = PBXBuildFile; fileRef = E099651F2044F45700AD80DB /* functions.metal */; };
+		E09965222044F48400AD80DB /* functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09965212044F48400AD80DB /* functions.swift */; };
+		E09965242044F82A00AD80DB /* model in Resources */ = {isa = PBXBuildFile; fileRef = E09965232044F82A00AD80DB /* model */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		8A0CA7721F65283B00E2858E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A0CA7741F65283B00E2858E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AAECE111F762CD800C20BF9 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		E099651F2044F45700AD80DB /* functions.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = functions.metal; sourceTree = "<group>"; };
+		E09965212044F48400AD80DB /* functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = functions.swift; sourceTree = "<group>"; };
+		E09965232044F82A00AD80DB /* model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = model; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				8A0CA7681F65283B00E2858E /* AppDelegate.swift */,
 				8A0CA76A1F65283B00E2858E /* ViewController.swift */,
 				8AAECE111F762CD800C20BF9 /* Shaders.metal */,
+				E099651F2044F45700AD80DB /* functions.metal */,
+				E09965232044F82A00AD80DB /* model */,
+				E09965212044F48400AD80DB /* functions.swift */,
 			);
 			path = MetalShaderImageRender;
 			sourceTree = "<group>";
@@ -128,6 +137,7 @@
 			files = (
 				8A0CA7731F65283B00E2858E /* LaunchScreen.storyboard in Resources */,
 				8A0CA7701F65283B00E2858E /* Assets.xcassets in Resources */,
+				E09965242044F82A00AD80DB /* model in Resources */,
 				8A0CA76E1F65283B00E2858E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AAECE121F762CD800C20BF9 /* Shaders.metal in Sources */,
+				E09965222044F48400AD80DB /* functions.swift in Sources */,
+				E09965202044F45700AD80DB /* functions.metal in Sources */,
 				8A0CA76B1F65283B00E2858E /* ViewController.swift in Sources */,
 				8A0CA7691F65283B00E2858E /* AppDelegate.swift in Sources */,
 			);
@@ -279,7 +291,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9Z86A4AWDE;
+				DEVELOPMENT_TEAM = 866K9UT3G3;
 				INFOPLIST_FILE = MetalShaderImageRender/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -295,7 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9Z86A4AWDE;
+				DEVELOPMENT_TEAM = 866K9UT3G3;
 				INFOPLIST_FILE = MetalShaderImageRender/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
